@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.formContainer{
+    /* background-color: red; */
+    background-color: #fff;
+    box-shadow: 3px 7px 100px -2px rgba(0,0,0,0.75);
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid cadetblue;
+}
+h1{
+    font-weight: 500;
+    color: rgb(31, 92, 95);
+}
+button{
+    background-color: #fff;
+    margin: 10px 0px;
+    transition: all ease-in .5s;
+}
+button:hover{
+    background-color: cadetblue;
+    color: white;
+    font-weight: 600;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 18px 0px;
+    padding: 6px 5px;
+    position: relative;
+    border: 2px solid black;
+}
+.inputBox input{
+    font-size: 17px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.inputBox textarea{
+    font-size: 17px;
+    width: 100%;
+    border: none;   
+    outline: none;
+    resize: none;
+}
+.inputBox label{
+    /* background-color: orange; */
+    position: absolute;
+    top: 50%;
+    left: 20px; 
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all ease .5s;
+}
+.inputBox input:focus~label,
+.inputBox input:valid~label,
+.inputBox textarea:focus~label,
+.inputBox textarea:valid~label
+{
+    top:-3px;
+    font-size: 13px;
+    background: #fff;
+    color:cadetblue;
+}
+
+button{
+    padding: 10px 60px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+@media (max-width:600px) {
+    .formContainer{
+        width: 80%;
+    }
+}
