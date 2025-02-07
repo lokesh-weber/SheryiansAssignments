@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.images{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h"
+    "i"
+    "j";
+}
+@media (min-width:1080px){
+    .images{
+    grid-template-areas: 
+        "a a b c"
+        "a a d e"
+        "f g j j"
+        "h i j j";
+    }
+    
+}
+.image-1{
+    grid-area: a;
+}
+.image-2{
+    grid-area: b;
+}
+.image-3{
+    grid-area: c;
+}
+.image-4{
+    grid-area: d;
+}
+.image-5{
+    grid-area: e;
+}
+.image-6{
+    grid-area: f;
+}
+.image-7{
+    grid-area: g;
+}
+.image-8{
+    grid-area: h;
+}
+.image-9{
+    grid-area: i;
+}
+.image-10{
+    grid-area: j;
+}
